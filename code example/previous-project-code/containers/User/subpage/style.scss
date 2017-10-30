@@ -1,0 +1,19 @@
+@function A( $col ) {
+     @return $col+px;
+}
+
+
+.fail_div {
+    background: url('../img/fail.png') center 0 no-repeat;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: A(210);
+    margin-top: 30%;
+    background-size: A(150) A(170);
+    p{
+        color: #989898;
+        font-size: A(22.5);
+        line-height: A(30);
+    }
+}

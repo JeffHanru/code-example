@@ -1,0 +1,27 @@
+@function A( $col ) {
+     @return $col+px;
+}
+
+$baseColor: #2e9cf6;
+
+.result{
+    .header_ts{
+        height: A(67.5);
+        width: 100%;
+        line-height: A(67.5);
+        text-align: center;
+        font-size: A(28);
+        background-color: #dcefff;
+        color: $baseColor;
+    }
+    .tips{
+        font-size: A(28);
+        color: #888;
+        line-height: A(52);
+        padding: A(37.5) 0 A(150) A(37.5);
+        cite{
+            display: block;
+            color: $baseColor;
+        }
+    }
+}

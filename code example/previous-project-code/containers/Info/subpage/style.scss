@@ -1,0 +1,44 @@
+@function A( $col ) {
+     @return $col+px;
+}
+
+$baseColor:#2e9cf6;//基色
+
+$Unchecked:#bbbbbb;//未选中文字
+$checked: #555555;//选中的文字
+.warning{
+    height: A(67.5);
+    width: 100%;
+    background-color: rgb(254,243,217);
+    color: #ed7b00;
+    font-size: A(26);
+    line-height: A(67.5);
+    img{
+        width: A(30);
+        margin: auto A(15) auto A(26.25);
+        vertical-align:middle;
+    }
+}
+
+
+
+.option_btn{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: A(97.5);
+    width: 100%;
+    background-color: #2e9cf6;
+    color: white;
+    font-size: A(34);
+    text-align: center;
+    line-height: A(97.5);
+    .am-activity-indicator{
+        position: absolute;
+        left: 60%;
+        top: 32px;
+        width: 35px;
+        height: 35px;
+    }
+
+}

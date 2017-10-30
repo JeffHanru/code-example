@@ -1,0 +1,20 @@
+/**贷款协议**/
+
+.agree{
+    .navbar-inner{text-align: center;background: #f3f3f3;line-height: 100px;font-size: 33px;}
+    p{line-height: 40px}
+    .left{ float:left}
+    .right{ float:right}
+    .service-wrap-ele{ margin: 40px; color: #828282; border-bottom: #e6e6e6 1px solid; padding-bottom: 20px;}
+    .service-wrap-ele .email{ color: #3a91cf}
+    .service-wrap-ele .service-wrap-ele-box{ padding: 8px 0; background:#f3f3f3; border:#e6e6e6 1px solid; margin-bottom: 15px;}
+    .service-wrap-ele .service-wrap-ele-box .service-wrap-ele-box-tt{ font-size: 14px; font-weight: 100; border-left: #3a91cf 5px solid; height: 14px; line-height: 16px; padding-left:10px;padding-top:10px;}
+    .service-wrap-ele .service-wrap-ele-box .service-wrap-ele-box-list{ list-style: none; padding: 15px;}
+    .service-wrap-ele .service-wrap-ele-box .service-wrap-ele-box-list li:before{ content: ''; display:inline-block; width:6px; height:6px; background: #3a91cf; border-radius: 4px; vertical-align: middle;  margin-right: 8px;}
+    .service-wrap-title{ font-size: 32px; background: #2e9cf6; color: #fff; display: inline-block; padding: 5px 15px; font-weight: 200;}
+    .update-time{ text-align:center; display: block; color: #bbb; padding-bottom: 20px;}
+    .rules{ text-align:center;margin: 0 auto .5rem auto; font-size: .8rem;width: 13rem; margin-bottom:.5rem;}
+    .rules lable{ float:left;}
+    .rules input{margin: .31rem .3rem .25rem 0;}
+    .rules a{color: #1f6ce5;}
+} 

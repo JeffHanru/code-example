@@ -1,0 +1,147 @@
+
+.city{
+    padding-top: '0.88rem';
+    position: 'relative';
+    &.fix{
+        overflow-y: hidden;
+        height: 100%;
+        position: absolute;
+    }
+    .search{
+        position: 'absolute'; top: 0; left: 0; right: 0;
+    }
+    .am-list-body{
+        .am-indexed-list-section-body{
+            padding-right: 50px;
+        }
+    
+    }
+    .am-list-body{
+        .list_item{
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding-left: 0.3rem;
+            min-height: 0.9rem;
+            background-color: #fff;
+            vertical-align: middle;
+            overflow: hidden;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 30px;
+            &.on{
+                color: #23cc77;
+            }
+        }
+
+        .list_item:not(:last-child):after {
+            display: block;
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            right: auto;
+            top: auto;
+            width: 100%;
+            border-bottom: 1PX solid #ddd;
+        }
+    }
+    
+    .am-list-header{
+        background-color: white;
+        .hotCity{
+            &>div{
+                color: #999;
+                font-size: 30px;
+                margin-bottom: 25px;
+                margin-left: 10px;
+            }
+            ul{
+                li{
+                    display: inline-block;
+                    box-sizing: border-box;
+                    width: 25%;
+                    float: left;
+                    padding-right: 20px;
+                    padding-bottom: 25px;
+                    div{
+                        position: relative;
+                        line-height: 55px;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        border-radius: 4px;
+                        font-size: 30px;
+                        color: #222;
+                        text-align: center;
+                        border: 1px solid #ddd;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+
+                    
+
+                }
+                li.on{
+                    div{
+                        color: #23cc77;
+                        border-color: #23cc77;
+                        background-color: #f4fcf8;
+                    }
+                }
+            }
+        }
+    }
+
+    .am-indexed-list-container{
+
+        .am-activity-indicator{
+            justify-content: center
+        }
+    }
+    .noData{
+        text-align: center;
+        margin-top: 100px;
+        font-size: 30px;
+    }
+}
+
+.area{
+
+    .am-list-body{
+        .am-list-view-scrollview{
+            margin-top: 0px;
+        }
+        .am-list-body{
+            border: 0px;
+            
+        }
+    }
+    .list-item{
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-left: 0.3rem;
+        min-height: 0.9rem;
+        background-color: #fff;
+        vertical-align: middle;
+        overflow: hidden;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .list-item:not(:last-child):after {
+            display: block;
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            right: auto;
+            top: auto;
+            width: 100%;
+            border-bottom: 1PX solid #ddd;
+    }
+}

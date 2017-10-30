@@ -1,0 +1,76 @@
+
+@function A( $col ) {
+     @return $col+px;
+}
+
+.order_list{
+    box-sizing: border-box;
+    padding: A(30) A(30) A(15) A(15); 
+    position: relative; 
+    overflow: hidden;
+    background-color: white;
+    margin-bottom: 10px;
+    &:after{
+        content: "";
+        visibility: visible;
+        display: block;
+        position: absolute;
+        top: A(45);
+        right: A(30);
+        width: A(22.5);
+        height: A(22.5);
+        border-top: 2px solid #ccc;
+        border-right: 2px solid #ccc;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+    .div1{
+        line-height:A(60);
+        height: A(60);
+        width: 100%;
+        p.money{
+            color:#666;
+            font-size: A(30);
+            width: 55%;
+            overflow: hidden;
+            span{
+                color: #363636;
+                font-size: A(33.75);
+            }
+        }
+        p.apply_time{
+            color: #a0a0a0;
+            font-size: A(24.75);
+            margin-right: A(75);
+        }
+    }
+    .div2{
+        line-height: A(60);
+        height: A(60);
+        overflow: hidden;
+        width: 100%;
+        .date{
+            float:left;
+            color:#666;
+            font-size: A(30);
+            span{
+                color: #363636;
+                font-size: A(33.75);
+            }
+        }
+        .label{
+            font-size: A(22.5);
+            height: A(33.75);
+            line-height: A(33.75);
+            border-radius: A(16.9);
+            padding: 0 A(11.25);
+            background: rgb(30,176,252);
+            color: #fff;
+            margin-top: A(15);
+        }
+
+    }
+
+
+
+}

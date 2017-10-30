@@ -1,0 +1,43 @@
+
+
+
+@function A( $col ) {
+     @return $col+px;
+}
+
+
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: A(82);
+    line-height: A(82);
+    width: 100%;
+    z-index: 5;
+    color: #fff;
+    font-size: A(37.5);
+    text-align: center;
+    background-color: rgb(1,176,254);
+    .back{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: A(97.5);
+        height: A(82.5);
+        &:active{ background-color:#1f6ce5;}
+        i{
+            position: absolute;
+            top: A(30);
+            width: A(22.5);
+            height: A(22.5);
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+    }
+    .title{
+
+    }
+}

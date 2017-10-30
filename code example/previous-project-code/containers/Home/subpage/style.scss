@@ -1,0 +1,165 @@
+@function A( $col ) {
+     @return $col+px;
+}
+
+
+$line: 1px #E3E3E3 solid;//线
+$Unchecked:#bbb;//未选中文字
+$checked: #555555;//选中的文字
+
+$lheight : 100px;//input行高
+
+
+
+
+.banner{
+    height: A(360);
+    width: 100%;
+    background: url('../img/banner.png') center no-repeat;
+    background-size: cover;
+}
+
+.home_form{
+    margin-top: A(-12);
+    .inputs{
+        width: 90%;
+        background-color: white;
+        margin-left: 5%;
+        border-radius: A(10);
+        padding: 0 15px;
+        .line{
+            height: $lheight;
+            width: 100%;
+            position: relative;
+            &:after{
+                content: "";
+                width: 100%;
+                position: absolute;
+                height: 1px;
+                border-bottom: $line;
+                bottom: 0px;
+                left: 0px;
+            }
+            input{
+                height: $lheight;
+                font-size: A(30);
+                border: 0px;
+                color: $checked;
+                padding-left: A(7.5);
+                &::-webkit-input-placeholder{
+                    color: $Unchecked;
+                }
+
+            }
+        }
+        .tel{
+            input{
+                width: 100%;
+            }
+            
+            
+        }
+        .dx{
+            input{
+                width: 60%;
+            }
+            div.yzm{
+                width: 40%;
+                height: 100%;
+                display: block;
+                line-height: $lheight;
+                text-align: center;
+                font-size: A(32);
+                position: relative;
+                color: #2E9CF6;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    height: $lheight * .6;
+                    width: 1px;
+                    left: 0px;
+                    top: $lheight * .2;
+                    border-left: $line;
+                }
+            }
+            div.am-activity-indicator{
+                display: inline-block;
+                position: absolute;
+                margin-top: A(5.25);
+                span{
+                    width: A(30);
+                    height: A(30);
+                }
+            }
+        }
+        .name{
+            input{
+                width: 100%;
+            }
+        }
+        .money{
+            line-height: $lheight;
+            color: $Unchecked;
+            font-size: A(30);
+            padding-left: A(7.5);
+            img{
+                width: $lheight * .15;
+                height: $lheight * .3;
+                margin-top: $lheight * .35;
+                margin-right: A(15);
+            }
+            em{
+                &:last-child{
+                    margin-left: A(37.5);
+                }
+                color: $checked;
+                
+            }
+        }
+    }
+    .btn{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: A(25);
+        height: A(90);
+        line-height: A(90);
+        font-size: A(32);
+        border-radius: A(10.3);
+        .am-activity-indicator{
+            display: inline-block;
+            position: absolute;
+            margin-top: A(5.25);
+            span{
+                width: A(30);
+                height: A(30);
+            }
+        }
+    }
+}
+.Text{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15px;
+    .ts{
+        // color: #f2b639;
+        color: #f65d2e;
+        width: 100%;
+        text-align: center;
+        font-size: A(26);
+
+    }
+    .beian{
+        margin-top: 100px;
+        p{
+            text-align: center;
+            margin-bottom: 6px;
+            font-size: A(22);
+            color: #BBBBBB;
+        }
+        &.fix{
+            position: fixed;
+            bottom:0px;
+            width: 90%;
+        }
+    }
+}

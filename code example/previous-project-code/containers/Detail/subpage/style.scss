@@ -1,0 +1,178 @@
+@function A( $col ) {
+     @return $col+px;
+}
+
+
+.ud{
+    width: 100%;
+    height: A(195);
+    background-color: white;
+    padding: 0 A(60)0 A(30);
+    color: #666;
+    .ud-left{
+        height: 100%;
+        div{
+            height: A(97.5);
+            font-size: A(30);
+            em{
+                font-size: A(33.75);
+                color: #363636;
+            }
+        }
+        &>div:first-child{
+            vertical-align: bottom;
+            display: table-cell;
+            padding-bottom: A(15);
+        }
+        &>div:last-child{
+            padding-top: A(15);
+        }
+    }
+    .ud-right{
+        height: A(195);
+        line-height: A(195);
+        height: 100%;
+        font-size: A(30);
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            margin-top: -5.6px;
+            width: 8px;
+            height: 8px;
+            border-top: 1px solid #666;
+            border-right: 1px solid #666;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.call{
+    margin-top: 1px;
+    height: A(112.5);
+    background-color: white;
+    padding: 0 A(45) 0 A(30);
+    .float-left{
+        line-height: A(112.5);
+        color: #666;
+        font-size: A(27);
+        img{
+            vertical-align: middle;
+            width: A(45);
+            margin-right: A(15);
+        }
+    }
+    .float-right{
+        margin-top: A(26.25);
+        .btn{
+            font-size: A(26.25);
+            width: A(127.5);
+            height: A(60);
+            line-height: A(60);
+            border-radius: A(11.25);
+        }
+    }
+}
+
+.detail_line{
+    margin-top: 1px;
+    padding: A(30) A(45) 0 A(52.5);
+    background-color: white;
+
+    &>div:not(:last-child){
+        &>div:nth-child(1){
+            &:after{
+                content: "";
+                position: absolute;
+                top: A(90);
+                left: A(37.5);
+                width: 2px;
+                height: A(112.5);
+                border-left: 1px #c2c2c9 solid;
+            }
+        }
+    }
+    &>div{
+        width: 100%;
+        height: A(225);
+        &>div:nth-child(1){
+            position: relative;
+            height: A(120);
+            width: A(97.5);
+            span{
+                display: inline-block;
+                background-color: white;
+                width: A(75);
+                height: A(75);
+                text-align: center;
+                line-height: A(75);
+                color: #646464;
+                border: 1px #c2c2c9 solid;
+                font-size: A(22.5);
+                border-radius: A(37.5);
+            }
+            
+            
+        }
+        &>div:nth-child(2){
+            padding-top: A(5);
+            width: auto;
+            margin-left: A(97.5);
+            span{
+                display: inline-block;
+            }
+            span:nth-child(1){
+                color: #646464;
+                font-size: A(28.5);
+                width: 100%;
+            }
+            span:nth-child(2){
+                margin-top: A(7.5);
+                color: #a0a0a0;
+                font-size: A(22.5);
+                width: 100%;
+            }
+        }
+    }
+    
+    div.grey{
+        &>div:nth-child(1){
+            span{
+                background-color: #c2c2c9;
+                color: white;
+            }
+        }
+        
+    }
+    div.on{
+        &>div:nth-child(1){
+            span{
+                background-color: rgb(30,176,252);
+                border: 1px rgb(30,176,252) solid;
+                color: white;
+            }
+        }
+        &>div:nth-child(2){
+            span:nth-child(1){
+                color: rgb(30,176,252);
+                
+            }
+        }
+    }
+}
+
+.detail_cancel{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    background: rgb(30,176,252);
+    color: #fff;
+    text-align: center;
+    line-height: A(75);
+    height: A(75);
+    font-size: A(25.5);
+
+}

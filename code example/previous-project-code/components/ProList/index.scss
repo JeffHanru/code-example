@@ -1,0 +1,88 @@
+@function A( $col ) {
+     @return $col+px;
+}
+
+$baseColor: #2e9cf6;
+
+.prolist{
+    height: A(180);
+    background-color: white;
+    margin-bottom: A(10);
+    display: flex;
+    .prologo{
+        width: A(130);
+        img{
+            width: 70%;
+            margin: A(30)  0 0 18%;
+            border-radius: A(15);
+        }
+    }
+    .proinfo{
+        flex:1;
+        .name{
+            margin: A(26) A(22.5) 0 A(7.5);
+            strong{
+                text-align: left;
+                font-size: A(32);
+                font-weight: normal;
+                color: #222222;
+            }
+            span{
+                margin-top: A(7.5);
+                text-align: right;
+                font-size: A(18);
+                color: #888888;
+                width: 70%;
+                cite{
+                    color: $baseColor;
+                    font-size: A(32);
+                    font-weight: 500;
+                }
+                em{
+                    position: relative;
+                    font-size: A(32);
+                    color: red;
+                    padding-left: A(18.75);
+                    i{
+                        font-size: A(26.25);
+                    }
+                    &:before{
+                        position: absolute;
+                        content: "";
+                        top: A(3.75);
+                        left: A(7.5);
+                        width: A(1);
+                        height: A(37.5);
+                        background: #e1e1e1;
+                    }
+                }
+            }
+        }
+        .slogan{
+            margin: A(15) 0 0 A(7.5);
+            font-size: A(24);
+            color: #888888;
+        }
+        .label{
+            margin: A(15) A(22.5) 0 A(7.5);
+            span{
+                em{
+                    margin-right: A(11.25);
+                    padding: 0 A(4.5);
+                    border: 1px $baseColor solid;
+                    color: $baseColor;
+                    font-size: A(22);
+                    height: A(30);
+                    line-height: A(30);
+                    display: inline-block;
+                }
+            }
+            cite{
+                color: #888888;
+                font-size: A(18);
+                margin-top: A(7.5);
+            }
+        }
+    }
+
+}
